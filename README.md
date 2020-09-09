@@ -3,6 +3,9 @@
 To start the express server, run:
 
 `npm install`
+
+and then
+
 `npm start`
 
 # Coding Challenge
@@ -10,6 +13,8 @@ To start the express server, run:
 Please read through this document before you start
 
 ## Requirements
+
+A simple express.js app already exist to save you sometime. You should fork this repo and build on top of it.
 
 ### Build a route to recommend movies for users based on user's rated movies
 
