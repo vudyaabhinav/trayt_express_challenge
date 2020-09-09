@@ -50,133 +50,133 @@
       "id": "tt6723592",
       "name": "Tenet",
       "director": "Christopher Nolan",
-      "geners": ["Action", "Sci-Fi"]
+      "genres": ["Action", "Sci-Fi"]
     },
     "tt5013056": {
       "id": "tt5013056",
       "name": "Dunkirk",
       "director": "Christopher Nolan",
-      "geners": ["Action", "Drama", "History", "Thriller", "War"]
+      "genres": ["Action", "Drama", "History", "Thriller", "War"]
     },
     "tt0816692": {
       "id": "tt0816692",
       "name": "Interstellar",
       "director": "Christopher Nolan",
-      "geners": ["Adventure", "Drama", "Sci-Fi", "Thriller"]
+      "genres": ["Adventure", "Drama", "Sci-Fi", "Thriller"]
     },
     "tt1345836": {
       "id": "tt1345836",
       "name": "The Dark Knight Rises",
       "director": "Christopher Nolan",
-      "geners": ["Action", "Adventure"]
+      "genres": ["Action", "Adventure"]
     },
     "tt1375666": {
       "id": "tt1375666",
       "name": "Inception",
       "director": "Christopher Nolan",
-      "geners": ["Action", "Adventure", "Sci-Fi", "Thriller"]
+      "genres": ["Action", "Adventure", "Sci-Fi", "Thriller"]
     },
     "tt0468569": {
       "id": "tt0468569",
       "name": "The Dark Knight",
       "director": "Christopher Nolan",
-      "geners": ["Action", "Crime", "Drama", "Thriller"]
+      "genres": ["Action", "Crime", "Drama", "Thriller"]
     },
     "tt0482571": {
       "id": "tt0482571",
       "name": "The Prestige",
       "director": "Christopher Nolan",
-      "geners": ["Drama", "Mystery", "Sci-Fi", "Thriller"]
+      "genres": ["Drama", "Mystery", "Sci-Fi", "Thriller"]
     },
     "tt0372784": {
       "id": "tt0372784",
       "name": "Batman Begins",
       "director": "Christopher Nolan",
-      "geners": ["Action", "Adventure"]
+      "genres": ["Action", "Adventure"]
     },
     "tt0209144": {
       "id": "tt0209144",
       "name": "Memento",
       "director": "Christopher Nolan",
-      "geners": ["Mystery", "Thriller"]
+      "genres": ["Mystery", "Thriller"]
     },
     "tt5104604": {
       "id": "tt5104604",
       "name": "Isle of Dogs",
       "director": "Wes Anderson",
-      "geners": ["Animation", "Adventure", "Comedy", "Drama", "Fantasy", "Sci-Fi"]
+      "genres": ["Animation", "Adventure", "Comedy", "Drama", "Fantasy", "Sci-Fi"]
     },
     "tt2278388": {
       "id": "tt2278388",
       "name": "The Grand Budapest Hotel",
       "director": "Wes Anderson",
-      "geners": ["Adventure", "Comedy", "Crime"]
+      "genres": ["Adventure", "Comedy", "Crime"]
     },
     "tt1748122": {
       "id": "tt1748122",
       "name": "Moonrise Kingdom",
       "director": "Wes Anderson",
-      "geners": ["Comedy", "Drama", "Romance"]
+      "genres": ["Comedy", "Drama", "Romance"]
     },
     "tt0432283": {
       "id": "tt0432283",
       "name": "Fantastic Mr. Fox",
       "director": "Wes Anderson",
-      "geners": ["Animation", "Adventure", "Comedy", "Crime", "Drama", "Family"]
+      "genres": ["Animation", "Adventure", "Comedy", "Crime", "Drama", "Family"]
     },
     "tt0838221": {
       "id": "tt0838221",
       "name": "The Darjeeling Limited",
       "director": "Wes Anderson",
-      "geners": ["Adventure", "Comedy", "Drama"]
+      "genres": ["Adventure", "Comedy", "Drama"]
     },
     "tt0128445": {
       "id": "tt0128445",
       "name": "Rushmore",
       "director": "Wes Anderson",
-      "geners": ["Comedy", "Drama", "Romance"]
+      "genres": ["Comedy", "Drama", "Romance"]
     },
     "tt1182345": {
       "id": "tt1182345",
       "name": "Moon",
       "director": "Duncan Jones",
-      "geners": ["Drama", "Mystery", "Sci-Fi"]
+      "genres": ["Drama", "Mystery", "Sci-Fi"]
     },
     "tt0414993": {
       "id": "tt0414993",
       "name": "The Fountain",
       "director": "Darren Aronofsky",
-      "geners": ["Drama", "Mystery", "Romance", "Sci-Fi"]
+      "genres": ["Drama", "Mystery", "Romance", "Sci-Fi"]
     },
     "tt0120815": {
       "id": "tt0120815",
       "name": "Saving Private Ryan",
       "director": "Steven Spielberg",
-      "geners": ["Drama", "War"]
+      "genres": ["Drama", "War"]
     },
     "tt8579674": {
       "id": "tt8579674",
       "name": "1917",
       "director": "Sam Mendes",
-      "geners": ["Drama", "War"]
+      "genres": ["Drama", "War"]
     },
     "tt0910970": {
       "id": "tt0910970",
       "name": "WALL·E",
       "director": "Andrew Stanton",
-      "geners": ["Animation", "Adventure", "Family", "Sci-Fi"]
+      "genres": ["Animation", "Adventure", "Family", "Sci-Fi"]
     },
     "tt0062622": {
       "id": "tt0062622",
       "name": "2001: A Space Odyssey",
       "director": "Stanley Kubrick",
-      "geners": ["Adventure", "Sci-Fi"]
+      "genres": ["Adventure", "Sci-Fi"]
     },
     "tt4566758": {
       "id": "tt4566758",
       "name": "Mulan",
       "director": "Niki Caro",
-      "geners": ["Action", "Adventure", "Drama", "Family"]
+      "genres": ["Action", "Adventure", "Drama", "Family"]
     }
   }
 }

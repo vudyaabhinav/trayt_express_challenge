@@ -9,14 +9,14 @@ const moviesByDirector = {}
 const moviesByGenre = {}
 
 Object.values(movies).forEach((movie) => {
-  const { id, director, geners } = movie
+  const { id, director, genres } = movie
   if (moviesByDirector[director]) {
     moviesByDirector[director].push(id)
   } else {
     moviesByDirector[director] = [id]
   }
 
-  geners.forEach((genre) => {
+  genres.forEach((genre) => {
     if (moviesByGenre[genre]) {
       moviesByGenre[genre].push(id)
     } else {
@@ -34,7 +34,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
  * @property {string} id The id of the movie
  * @property {string} name The name of the movie
  * @property {string} director The director of the movie
- * @property {string} geners An Array<string> of geners
+ * @property {string} genres An Array<string> of genres
  */
 
 /**

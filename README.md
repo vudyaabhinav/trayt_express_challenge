@@ -30,13 +30,13 @@ Expected json response example
                 "id": "tt6723592",
                 "name": "Tenet",
                 "director": "Christopher Nolan",
-                "geners": [ "Action", "Sci-Fi" ]
+                "genres": [ "Action", "Sci-Fi" ]
             },
             {
                 "id": "tt5013056",
                 "name": "Dunkirk",
                 "director": "Christopher Nolan",
-                "geners": [ 'Action', 'Drama', 'History', 'Thriller', 'War' ]
+                "genres": [ 'Action', 'Drama', 'History', 'Thriller', 'War' ]
             },
             // ...
         ],
@@ -45,13 +45,13 @@ Expected json response example
                 "id": "tt1345836",
                 "name": "The Dark Knight Rises",
                 "director": "Christopher Nolan",
-                "geners": [ "Action", "Adventure" ]
+                "genres": [ "Action", "Adventure" ]
             },
             {
                 "id": "tt1375666",
                 "name": "Inception",
                 "director": "Christopher Nolan",
-                "geners": [ "Action", "Adventure", "Sci-Fi", "Thriller" ]
+                "genres": [ "Action", "Adventure", "Sci-Fi", "Thriller" ]
             },
             // ...
         ]
@@ -82,14 +82,14 @@ A helper function `getRatedMovies(userId)` in `helperFunctions.js` is available 
     id: 'tt0816692',
     name: 'Interstellar',
     director: 'Christopher Nolan',
-    geners: [ 'Adventure', 'Drama', 'Sci-Fi', 'Thriller' ],
+    genres: [ 'Adventure', 'Drama', 'Sci-Fi', 'Thriller' ],
     userRating: 9
   },
   {
     id: 'tt0414993',
     name: 'The Fountain',
     director: 'Darren Aronofsky',
-    geners: [ 'Drama', 'Mystery', 'Romance', 'Sci-Fi' ],
+    genres: [ 'Drama', 'Mystery', 'Romance', 'Sci-Fi' ],
     userRating: 5
   },
   ...
@@ -106,13 +106,13 @@ A helper function `getRecommendationByDirector(director)` in `helperFunctions.js
     id: 'tt6723592',
     name: 'Tenet',
     director: 'Christopher Nolan',
-    geners: [ 'Action', 'Sci-Fi' ]
+    genres: [ 'Action', 'Sci-Fi' ]
   },
   {
     id: 'tt5013056',
     name: 'Dunkirk',
     director: 'Christopher Nolan',
-    geners: [ 'Action', 'Drama', 'History', 'Thriller', 'War' ]
+    genres: [ 'Action', 'Drama', 'History', 'Thriller', 'War' ]
   },
   ...
 ]
@@ -128,13 +128,13 @@ A helper function `getRecommendationByGenre(genre)` in `helperFunctions.js` is a
     id: 'tt5104604',
     name: 'Isle of Dogs',
     director: 'Wes Anderson',
-    geners: [ 'Animation', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Sci-Fi']
+    genres: [ 'Animation', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Sci-Fi']
   },
   {
     id: 'tt2278388',
     name: 'The Grand Budapest Hotel',
     director: 'Wes Anderson',
-    geners: [ 'Adventure', 'Comedy', 'Crime' ]
+    genres: [ 'Adventure', 'Comedy', 'Crime' ]
   },
   ...
 ]
