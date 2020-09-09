@@ -14,7 +14,7 @@ Please read through this document before you start
 
 ## Requirements
 
-A simple express.js app already exist to save you sometime. You should fork this repo and build on top of it.
+A simple express.js app already exist to save you some time. You should fork this repo and build on top of it.
 
 ### Build a route to recommend movies for users based on user's rated movies
 
@@ -75,7 +75,7 @@ Expected json response example
 
 #### Get user's movie rating
 A helper function `getRatedMovies(userId)` in `helperFunctions.js` is available to get a list of movies that user already rated. `userRating` have a scale of 1 to 10
-```json  
+```
 // example output
 [
   {
@@ -98,7 +98,7 @@ A helper function `getRatedMovies(userId)` in `helperFunctions.js` is available 
 
 #### Get Recommendation by director
 A helper function `getRecommendationByDirector(director)` in `helperFunctions.js` is available to get a list of recommendated movies made by the same director
-```json  
+```
 // getRecommendationByDirector('Christopher Nolan')
 // example output
 [
