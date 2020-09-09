@@ -16,6 +16,8 @@ Please read through this document before you start
 
 A simple express.js app already exist to save you some time. You should fork this repo and build on top of it.
 
+You should allocate about 2 hours to work on this project. Although it is okay to exceed that time.
+
 ### Build a route to recommend movies for users based on user's rated movies
 
 `GET localhost:9000/recommendations`
