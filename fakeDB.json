@@ -1,4 +1,12 @@
 {
+  "sessions": {
+    "1": {
+      "userId": "9aaec1fc-ea13-4783-81f8-a998c1e0d648"
+    },
+    "2": {
+      "userId": "bb94b3da-02ad-45ad-ae71-d0f22d97ea9a"
+    }
+  },
   "users": {
     "9aaec1fc-ea13-4783-81f8-a998c1e0d648": {
       "name": "Lewis B. Hopkins"
