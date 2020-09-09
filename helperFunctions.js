@@ -82,14 +82,14 @@ async function getRecommendationByGenre(genre) {
  * Save Recommendation to database
  * 
  * @param  {string} userId User's id 
- * @param  {Recommendation} recommendations Recommendation object that needs to be saved
+ * @param  {Recommendation} recommendation Recommendation object that needs to be saved
  * @return {Promise} returns nothing
  */
-async function saveRecommendations(userId, recommendations) {
+async function saveRecommendations(userId, recommendation) {
   const user = users[userId]
   if (!user) throw new Error('User does not exist')
   await delay(100)
-  userRecommendations[userId] = cloneDeep(recommendations)
+  userRecommendations[userId] = cloneDeep(recommendation)
   return
 }
 
