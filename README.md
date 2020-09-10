@@ -69,7 +69,7 @@ Expected json response example
 5. Use `favDirector` to get a list of recommended movies made by this director (`byDirector`)
 6. Use `favGenre` to get a list of recommended movies in the genre (`byGenre`)
 7. Filter out movies in `byDirector` and `byGenre` that's already in the user's `ratedMovies`. (Because that means the user already watched it)
-8. Use `getSavedRecommendations(userId)` to see if the user already have saved recommendation available. Use `saveRecommendations(userId, recommendation)` to save the user's recommendation.
+8. Use `getSavedRecommendations(userId)` to see if the user already have saved recommendation available. If it is the case, return saved recommendation. It not, get recommendation using the steps above and use `saveRecommendations(userId, recommendation)` to save the user's recommendation.
 
 ### Helper functions
 
@@ -153,7 +153,7 @@ A helper function `getSavedRecommendations(userId)` should be used to get user's
 2. Know how to deal with *promises* and use ES2017 *async/await syntax*
 3. Know how to write *easy to understand* and *easy to change* code
 4. Able to write efficient code that *minimize response time*
-5. Able to do clean commits and make meaningful commit messages. (you should make samll commits that shows how you progress in this project)
+5. Able to do clean commits and make meaningful commit messages. (you should make small commits that shows how you progress in this project)
 
 
 
