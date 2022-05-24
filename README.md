@@ -147,6 +147,10 @@ A helper function `saveRecommendations(userId, recommendation)` should be used t
 
 A helper function `getSavedRecommendations(userId)` should be used to get user's `recommendation` if it is already saved.
 
+
+## Github branch
+Please clone the repository on your local machine, do the changes and then commit to **your** github repository. Please send us the link of your repository once done. 
+
 ## What we are looking for in this coding challenge
 
 1. Able to understand requirements and build basic routes in express.js
