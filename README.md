@@ -14,15 +14,16 @@ Please read through this document before you start
 
 ## Requirements
 
-A simple express.js app already exist to save you some time. You should fork this repo and build on top of it.
+A simple express.js app already exists to save you some time. You should **fork** this repo and build on top of it.
 
-You should allocate about 2 hours to work on this project. Although it is okay to exceed that time.
+You should allocate about 2 hours to work on this project. Although it is okay to exceed that time, we do encourage you
+to limit yourself. We appreciate that this is a significant investment of your time.
 
 ### Build a route to recommend movies for users based on user's rated movies
 
 `GET localhost:9000/recommendations`
 Expected json response example
-```jsonld=
+```json
 {
     "recommendation": {
         "favDirector": "Christopher Nolan",
@@ -38,7 +39,7 @@ Expected json response example
                 "id": "tt5013056",
                 "name": "Dunkirk",
                 "director": "Christopher Nolan",
-                "genres": [ 'Action', 'Drama', 'History', 'Thriller', 'War' ]
+                "genres": [ "Action", "Drama", "History", "Thriller", "War" ]
             },
             // ...
         ],
@@ -61,8 +62,8 @@ Expected json response example
 }
 ```
 
-1. The route should have a middleware where it use user's `Bearer Token` to get the user's `userId`
-(which you will hard coded to `9aaec1fc-ea13-4783-81f8-a998c1e0d648`)
+1. The route should have a middleware where it uses the user's `Bearer Token` to get the user's `userId`
+(which you will hard code to `9aaec1fc-ea13-4783-81f8-a998c1e0d648`)
 2. First you should get a list of movies a user has rated, `ratedMovies`. Using `getRatedMovies(userId)`
 3. Figure out what is the name of a user's favorite director, `favDirector`. By counting the most popular director in `ratedMovies` list that have `userRating` larger or equal to 7 (1~10 scale)
 4. Figure out what is a user's favorite genre, `favGenre`. By counting the most popular genre in `ratedMovies` list that have `userRating` larger or equal to 7 (1~10 scale)
@@ -77,7 +78,7 @@ Expected json response example
 
 #### Get user's movie rating
 A helper function `getRatedMovies(userId)` in `helperFunctions.js` is available to get a list of movies that user already rated. `userRating` have a scale of 1 to 10
-```
+```js
 // example output
 [
   {
@@ -100,7 +101,7 @@ A helper function `getRatedMovies(userId)` in `helperFunctions.js` is available 
 
 #### Get Recommendation by director
 A helper function `getRecommendationByDirector(director)` in `helperFunctions.js` is available to get a list of recommendated movies made by the same director
-```
+```js
 // getRecommendationByDirector('Christopher Nolan')
 // example output
 [
@@ -122,7 +123,7 @@ A helper function `getRecommendationByDirector(director)` in `helperFunctions.js
 
 #### Get Recommendation by genre
 A helper function `getRecommendationByGenre(genre)` in `helperFunctions.js` is available to get a list of recommendation movies that's in the same genre
-```
+```js
 // getRecommendationByGenre('Adventure')
 // example output
 [
@@ -149,7 +150,8 @@ A helper function `getSavedRecommendations(userId)` should be used to get user's
 
 
 ## Github branch
-Please clone the repository on your local machine, do the changes and then commit to **your** github repository. Please send us the link of your repository once done. 
+Please fork the repository on your local machine, make your changes and then commit to **your** github repository.
+Please send us the link of your repository once done.
 
 ## What we are looking for in this coding challenge
 
@@ -157,7 +159,4 @@ Please clone the repository on your local machine, do the changes and then commi
 2. Know how to deal with *promises* and use ES2017 *async/await syntax*
 3. Know how to write *easy to understand* and *easy to change* code
 4. Able to write efficient code that *minimize response time*
-5. Able to do clean commits and make meaningful commit messages. (you should make small commits that shows how you progress in this project)
-
-
-
+5. Able to make clean commits and make meaningful commit messages. (you should make small commits that shows how you progress in this project)
