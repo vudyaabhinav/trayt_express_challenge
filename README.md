@@ -150,8 +150,11 @@ A helper function `getSavedRecommendations(userId)` should be used to get user's
 
 
 ## Github branch
-Please fork the repository on your local machine, make your changes and then commit to **your** github repository.
-Please send us the link of your repository once done.
+Please fork the repository on your local machine, make your changes and then commit to **your** private github repository.
+Once complete, please add the following github users to your private repo:
+- jcasner
+- harsknak
+- kgiberson
 
 ## What we are looking for in this coding challenge
 
