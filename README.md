@@ -150,14 +150,16 @@ A helper function `getSavedRecommendations(userId)` should be used to get user's
 
 
 ## Github branch
-Please fork the repository on your local machine, make your changes and then commit to **your** private github repository.
+There are a couple of options on how to share the code with us:- 
+1. Please fork the repository on your local machine, make your changes and then commit to **your** private github repository.
 Once complete, please add the following github users to your private repo:
 - jcasner
 - harshnak
 - kgiberson
 
-## What we are looking for in this coding challenge
+2. If you do not want to upload in you private repo, please email us the zip file of the code. 
 
+## What we are looking for in this coding challenge
 1. Able to understand requirements and build basic routes in express.js
 2. Know how to deal with *promises* and use ES2017 *async/await syntax*
 3. Know how to write *easy to understand* and *easy to change* code
