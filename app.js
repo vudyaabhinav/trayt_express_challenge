@@ -2,12 +2,10 @@ const express = require('express')
 const cors = require('cors')
 const jwt = require('jsonwebtoken')
 const {
-  getRatedMovies,
-  getRecommendationByDirector,
-  getRecommendationByGenre,
   saveRecommendations,
   getSavedRecommendations,
   verifyToken,
+  getRecommendationsForUser,
 } = require('./helperFunctions')
 const jwtSecretKey = require('./config')
 
@@ -17,14 +15,23 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+
 app.get('/recommendations', verifyToken, (req, res) => {
-  jwt.verify(req.token, jwtSecretKey, (err, authData) => {
+  jwt.verify(req.token, jwtSecretKey, async (err, authData) => {
     if(err) {
       res.sendStatus(403)
     }
     else {
-      console.log('user id', authData.userId)
-      res.sendStatus(200)
+      const userId = authData.userId
+      let recommendations = await getSavedRecommendations(userId)
+
+      if (recommendations) {
+        res.send({recommendation: recommendations})
+      } else {
+        recommendations = await getRecommendationsForUser(userId)
+        await saveRecommendations(userId, recommendations)
+        res.send({recommendation: recommendations})
+      }
     }
   })
 })

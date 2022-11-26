@@ -126,6 +126,30 @@ function verifyToken (req, res, next) {
   }
 }
 
+async function getRecommendationsForUser(userId) {
+  const userRatedMovies = await getRatedMovies(userId)
+  const highestRatedMovies = userRatedMovies.filter(movie => movie.userRating >= 7)
+  let directorCount = {}, genreCount = {}
+  highestRatedMovies.forEach(movie => {
+    const director = movie.director
+    directorCount[director] = directorCount[director] ? directorCount[director] + 1: 1
+
+    movie.genres.forEach(genre => {
+      genreCount[genre] = genreCount[genre] ? genreCount[genre] + 1: 1 
+    })
+  })
+
+  const favDirector = Object.keys(directorCount).reduce((a, b) => directorCount[a] > directorCount[b] ? a : b)
+  const favGenre = Object.keys(genreCount).reduce((a, b) => genreCount[a] > genreCount[b] ? a : b)
+  const recommendations = {
+    favDirector,
+    favGenre,
+    byDirector: await getRecommendationByDirector(favDirector),
+    byGenre: await getRecommendationByGenre(favGenre)
+  }
+  return recommendations
+}
+
 module.exports = {
   getRatedMovies,
   getRecommendationByDirector,
@@ -133,4 +157,5 @@ module.exports = {
   saveRecommendations,
   getSavedRecommendations,
   verifyToken,
+  getRecommendationsForUser
 }
