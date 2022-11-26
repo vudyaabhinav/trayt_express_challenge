@@ -114,10 +114,23 @@ async function getSavedRecommendations(userId) {
   }
 }
 
+function verifyToken (req, res, next) {
+  const bearerHeaders = req.headers.authorization;
+  if (typeof bearerHeaders !== 'undefined') {
+      const bearer = bearerHeaders.split(' ')
+      const bearerToken = bearer[1]
+      req.token = bearerToken
+      next()
+  } else {
+      res.sendStatus(403)
+  }
+}
+
 module.exports = {
   getRatedMovies,
   getRecommendationByDirector,
   getRecommendationByGenre,
   saveRecommendations,
   getSavedRecommendations,
+  verifyToken,
 }

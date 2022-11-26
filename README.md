@@ -19,6 +19,10 @@ A simple express.js app already exists to save you some time. You should **fork*
 You should allocate about 2 hours to work on this project. Although it is okay to exceed that time, we do encourage you
 to limit yourself. We appreciate that this is a significant investment of your time.
 
+### Testing the /recommendations endpoint
+
+Please use this sample JWT 
+```eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkdW1teSB0b2tlbiIsImlhdCI6MTY2OTQyNDM3NCwiZXhwIjoxNzAwOTYwMzc0LCJhdWQiOiJ3d3cuZXhhbXBsZS5jb20iLCJzdWIiOiJndXlAZXhhbXBsZS5jb20iLCJ1c2VySWQiOiI5YWFlYzFmYy1lYTEzLTQ3ODMtODFmOC1hOTk4YzFlMGQ2NDgifQ.BpUW_CQixSOtyIfwQ8OJmXS3_CRrJtZR7rtNjNBb1tE```
 ### Build a route to recommend movies for users based on user's rated movies
 
 `GET localhost:9000/recommendations`
